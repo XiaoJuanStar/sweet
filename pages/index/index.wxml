@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper
+        indicator-dots="{{indicatorDots}}" indicator-color="rgba(0, 0, 0, .2)" indicator-active-color="#ec613c" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px" style='width:90%'>
+    <block wx:for="{{background}}" wx:key="*this">
+      <swiper-item>
+        <image class="swiper-item" src='{{item.src}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="container-box">
+    <view class='container-box-item'>
+      <view class='container-box-item-left'>
+        <text class='box-item-left_title'>限时秒杀</text>
+        <text class='box-item-left_desc'>快来抢购吧</text>
+        <text class='box-item-left_small'>好物选购</text>
+      </view>
+      <view class='container-box-item-right'>
+        <image src='../../images/mangguo.jpg'></image>
+      </view>
+    </view>
+  </view>
+
+
+
+   
+  <!-- <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>

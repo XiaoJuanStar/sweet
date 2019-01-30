@@ -1,0 +1,27 @@
+/**index.wxss**/
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.container-box{
+  background: #f8f8f8;
+  width: 100%;
+  margin-top: 40rpx;
+}
+.container-box-item{
+  width: 45%;
+  margin: 10rpx 20rpx; 
+  height: 100rpx;
+}
+.container-box-item-left{
+  width: 50%;
+}
+.box-item-left_title{
+  font-size: 24rpx;
+}
+.box-item-left_desc{
+  font-size: 18rpx;
+}
+.box-item-left_small{
+  font-size: 16rpx;
+}
